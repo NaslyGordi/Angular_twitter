@@ -1,0 +1,19 @@
+{
+  "name": "angular_twitter",
+  "version": "1.0.0",
+  "description": "front de twitter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaslyGordi/Angular_twitter.git"
+  },
+  "author": "Nasly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NaslyGordi/Angular_twitter/issues"
+  },
+  "homepage": "https://github.com/NaslyGordi/Angular_twitter#readme"
+}
