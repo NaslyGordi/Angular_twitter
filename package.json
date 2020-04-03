@@ -1,5 +1,4 @@
 {
-
   "name": "proyecto",
   "version": "0.0.0",
   "scripts": {
@@ -20,6 +19,7 @@
     "@angular/platform-browser": "~9.1.0",
     "@angular/platform-browser-dynamic": "~9.1.0",
     "@angular/router": "~9.1.0",
+    "@ng-bootstrap/ng-bootstrap": "^6.0.2",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
@@ -45,5 +45,4 @@
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
   }
-
 }
