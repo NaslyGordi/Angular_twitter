@@ -1,0 +1,30 @@
+<table class="mat-elevation-z8">
+    <ng-container matColumnDef="texto">
+        <th mat-header-cell > TEXTO </th>
+    </ng-container>
+    <ng-container matColumnDef="autor">
+        <th mat-header-cell > AUTOR </th>
+    </ng-container>
+    <ng-container matColumnDef="fecha">
+        <th mat-header-cell > FECHA </th>
+    </ng-container>
+</table>
+<div *ngFor = "let tweet of listaTweets">
+<table class="example-full-width" cellspacing="0"><tr>    
+    <td>   {{ tweet.texto }}   </td>
+    <td>   {{ tweet.autor }}   </td>
+    <td>   {{ tweet.fecha }}   </td>
+</tr></table>
+</div>
+
+<div>   
+<table class="example-full-width" cellspacing="0"><tr>    
+    <td>   <label>Texto:</label>   </td>
+    <td>   <input matInput placeholder="Ingrese Un Texto" type="text" [(ngModel)]="nuevoTweet.texto">   </td>
+    <td>   <label>Autor:</label>   </td>
+    <td>   <input matInput placeholder="Ingrese Un Autor" type="text" [(ngModel)]="nuevoTweet.autor">   </td>
+    <td>   <label>Fecha:</label>   </td>
+    <td>   <input matInput placeholder="Ingrese La Fecha" type="text" [(ngModel)]="nuevoTweet.fecha">   </td>
+    <td>   <button mat-raised-button color="primary" (click) = "adicionarNuevoTweet()">Adicionar Tweet</button>   </td>  
+</tr></table>
+</div>
