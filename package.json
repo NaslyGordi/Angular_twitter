@@ -54,8 +54,8 @@
     "type": "git",
     "url": "git+https://github.com/NaslyGordi/Angular_twitter.git"
   },
-  "author": "Tatta Atias",
-  "license": "MIT",
+  "author": "Julián Vargas, Tatiana Arias, Nasly Gordillo, Katherin Vega, Andres Rodriguez",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/NaslyGordi/Angular_twitter/issues"
   },
