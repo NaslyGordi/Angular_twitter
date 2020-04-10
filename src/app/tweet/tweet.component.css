@@ -1,0 +1,13 @@
+.seprarador button,
+  .seprarador a {
+    margin-right: 30px;
+  }
+  .example-full-width {
+    width: 100%;
+  }
+  td {
+    padding-right: 10px;
+  }
+  table {
+    width: 100%;
+  }
