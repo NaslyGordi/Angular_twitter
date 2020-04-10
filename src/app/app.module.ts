@@ -1,22 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TwetsComponent } from './twets/twets.component';
+import { TweetComponent } from './tweet/tweet.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ListaTweetsComponent } from './lista-tweets/lista-tweets.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatTableModule} from '@angular/material/table';
+import { CreateTweetComponent } from './create-tweet/create-tweet.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TwetsComponent
-    
+    TweetComponent,
+    ListaTweetsComponent,
+    CreateTweetComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
