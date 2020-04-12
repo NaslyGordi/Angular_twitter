@@ -7,13 +7,14 @@
 }
 div#general{
     margin: auto;
-    width: 500px;
+    width: 800px;
     max-width: 90%;
     margin:30px auto;
-    color: black;
 
 }
 .mat-label{
     color: #00acee;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    margin-right:auto;
+    display:inline-block
   }

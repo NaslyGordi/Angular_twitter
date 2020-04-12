@@ -1,0 +1,14 @@
+<app-menu></app-menu>
+<div id="general" *ngFor ='let post of misPosts'>  
+    <br>
+    <br>
+    <br>
+    <mat-tab-group>    
+    <mat-tab label="Mensaje"> {{ post.message }}        </mat-tab>             
+    <mat-tab label="Fecha">   {{ post.published_date }} </mat-tab>            
+    <mat-tab label="Usuario"> {{ post.idUser }}         </mat-tab> 
+    <br>
+    <br>
+    <br>
+  </mat-tab-group>
+</div>

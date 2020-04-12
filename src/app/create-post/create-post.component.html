@@ -1,0 +1,27 @@
+<app-menu></app-menu>
+<br>
+  <br>
+  <br>
+  <div id="inicial">
+    <img src= "https://image.flaticon.com/icons/png/512/23/23931.png" width="30" height="30"/>
+    <br>
+  </div>
+  
+  <div id="texto">
+    <h2>Agregar un nuevo Mensaje</h2>
+  </div>
+  
+  <div id="general">    <mat-form-field class="example-full-width">
+      <mat-label class="mat-label">Mensaje:</mat-label>
+        <textarea matInput placeholder="Mensaje" [(ngModel)]="newPost.message" ></textarea>
+    </mat-form-field>  
+    <mat-form-field class="example-full-width">
+        <mat-label class="mat-label">Fecha:</mat-label>
+        <textarea matInput placeholder="Fecha"[(ngModel)]="newPost.published_date" ></textarea>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label class="mat-label">Usuario:</mat-label>
+      <textarea matInput placeholder="Usuario"[(ngModel)]="newPost.idUser" ></textarea>
+  </mat-form-field>  
+  <button mat-flat-button (click) = "NewPost()" color="primary" selected>Registrar Mensaje</button>
+</div>  

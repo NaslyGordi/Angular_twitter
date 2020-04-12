@@ -1,0 +1,45 @@
+.example-button-row button,
+.example-button-row a {
+  margin-right: 38px;
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  color: black;
+  color-interpolation-filters: black;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.example-button-row{
+  border-radius: 50px;
+}
+
+.mat-flat-button{
+  background-color: #00acee;
+  border-radius: 50px;
+  color: blanchedalmond;
+  width:500px;
+  height:30px
+}
+div#general{
+  margin: auto;
+  width: 800px;
+  max-width: 90%;
+  margin:30px auto;
+}
+div#inicial{
+  margin: auto;
+  width: 350px;
+  max-width: 90%;
+  margin:30px auto;
+}
+div#texto{
+  margin: auto;
+  width: 550px;
+  max-width: 90%;
+  margin:30px auto;
+}

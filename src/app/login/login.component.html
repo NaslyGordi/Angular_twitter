@@ -1,0 +1,32 @@
+<mat-card class="card-login">
+    <mat-card-header>
+      <mat-card-title>
+        <div>
+          <img src= "https://image.flaticon.com/icons/png/512/23/23931.png" width="30" height="30" class="inicial" />
+          <br>
+          Iniciar Session
+        </div>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="login-form">
+        <table class="login-full-width" cellspacing="0">
+          <tr>
+            <td>
+              <mat-form-field class="login-full-width">
+              <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+          <td><mat-form-field class="login-full-width">
+            <input matInput placeholder="Password" [(ngModel)]="password"type="password" name="password" required>
+          </mat-form-field></td>
+        </tr></table>
+      </form>
+      
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button (click)="login()" class="boton-login">Login</button>
+    </mat-card-actions>
+  </mat-card>

@@ -1,4 +1,9 @@
 <app-menu></app-menu>
+<div id="general">
+<label>Busca Tweets por autor</label>
+<textarea [(ngModel)]="b"></textarea>
+<button (click) = "buscarTweetAutor()">Buscar</button>
+</div>
 
 <div id="general" *ngFor ='let tweet of misTweets'>
     <br>
