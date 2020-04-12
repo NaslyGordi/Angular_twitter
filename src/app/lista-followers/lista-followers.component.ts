@@ -8,64 +8,20 @@ import { FollowersService } from '../followers.service';
   styleUrls: ['./lista-followers.component.css']
 })
 export class ListaFollowersComponent implements OnInit {
-
-  constructor() { }
+  misFollowers;
+  constructor(private FollowersService: FollowersService) {
+    this.getAllFollowers();
+   }
 
   ngOnInit(): void {
   }
-
-}
-
-//////////////////////////////////////////7
-/*
-
-@Component({
-  selector: 'app-lista-posts',
-  templateUrl: './lista-posts.component.html',
-  styleUrls: ['./lista-posts.component.css']
-})
-export class ListaPostsComponent implements OnInit {
-
-  misPosts;
-  constructor(private PostsService: PostsService) {
-    this.getAllPosts();
-  }
-  ngOnInit(): void {
-  }
-  getAllPosts(){
-    this.PostsService.getAllPosts().subscribe(
-        misPostsObs => {
-          this.misPosts = misPostsObs;
+  getAllFollowers(){
+    this.FollowersService.getAllFollowers().subscribe(
+      misFollowersObs => {
+        this.misFollowers = misFollowersObs;
         }
-      )
-  }    
-}
 
-/////////////////////////////////////////////////////
-
-
-
-
-@Component({
-  selector: 'app-lista-tweets',
-  templateUrl: './lista-tweets.component.html',
-  styleUrls: ['./lista-tweets.component.css']
-})
-export class ListaTweetsComponent implements OnInit {
-  misTweets;
-  constructor(private TweetsService: TweetsService) {
-    this.getTweets();
-  }
-  ngOnInit(): void {
-  }
-  getTweets(){
-    this.TweetsService.getAllTweets().subscribe(
-      misTweetsObs => {
-        this.misTweets = misTweetsObs;
-      }
     )
-    //this.misTweets = this.TweetsService.getAllTweets();
   }
 }
 
-*/
