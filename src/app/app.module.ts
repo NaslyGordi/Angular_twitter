@@ -25,6 +25,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ListaFollowersComponent } from './lista-followers/lista-followers.component';
+import { ListaUsuarioIdComponent } from './lista-usuario-id/lista-usuario-id.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ListaFollowersComponent } from './lista-followers/lista-followers.compo
     ListaPostsComponent,
     LoginComponent,
     MenuComponent,
-    ListaFollowersComponent
+    ListaFollowersComponent,
+    ListaUsuarioIdComponent
   ],
   imports: [
     BrowserModule,
