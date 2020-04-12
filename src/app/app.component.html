@@ -1,15 +1,13 @@
-<div>
-  Hola Mundo
-</div>
 
-<div>
-<nav>
-<div>
-  <a routerLink="/lista-Tweets">Lista Tweets</a>
-</div>
-<div>
-  <a routerLink="/new-Tweets">Crear Tweets</a>
-</div>
-</nav>
-<router-outlet></router-outlet>
-</div>
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <mat-menu #menu="matMenu">
+    
+    <button mat-menu-item routerLink="/new-Tweets">Nuevo Tweet</button>
+    <button mat-menu-item routerLink="/lista-Tweets">Lista de Tweets</button>
+    <button mat-menu-item routerLink="/new-Followers">Nuevo Seguidor</button>
+    <button mat-menu-item routerLink="/post">Nuevo mensaje</button>
+    <button mat-menu-item routerLink="/lista-posts">Lista de Mensajes</button>
+    
+  </mat-menu>
+
+  <router-outlet></router-outlet>
