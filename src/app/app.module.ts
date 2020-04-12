@@ -27,7 +27,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     ListaTweetsComponent,
     CreateTweetComponent,
     PageNotFoundComponent,
-    ListaTweetAutorComponent
+    ListaTweetAutorComponent,
     CreateFollowerComponent,
     CreatePostComponent,
     ListaPostsComponent
