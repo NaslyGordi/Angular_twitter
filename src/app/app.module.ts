@@ -12,6 +12,9 @@ import { CreateTweetComponent } from './create-tweet/create-tweet.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatTabsModule } from '@angular/material/tabs';
+import { ListaTweetAutorComponent } from './lista-tweet-autor/lista-tweet-autor.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +22,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     TweetComponent,
     ListaTweetsComponent,
     CreateTweetComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ListaTweetAutorComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     MatButtonModule,
     MatTableModule,
     MatInputModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

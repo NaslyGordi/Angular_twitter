@@ -5,22 +5,25 @@ import { TweetsService } from '../tweets.service';
 @Component({
   selector: 'app-tweet',
   templateUrl: './create-tweet.component.html',
-  styleUrls: ['./create-tweet.component.css']
+  styleUrls: ['./create-tweet.component.css'],
 })
 export class CreateTweetComponent implements OnInit {
   listaTweets = [];
   nuevoTweet: Tweet;
-
+  n = "1";
   constructor(private TweetsService: TweetsService) { 
     this.nuevoTweet = new Tweet; 
-    //console.log("Lista: ",this.listaTweets);
   }
   adicionarNuevoTweet (){
     console.log("validación");
-    console.log(this.nuevoTweet);
+    const a = this.nuevoTweet = {
+      id: 1,
+      texto: this.nuevoTweet.texto, 
+      autor: this.nuevoTweet.autor,
+      fecha: this.nuevoTweet.fecha
+    };
+    console.log(a);
     this.TweetsService.createNewTweet(this.nuevoTweet);
-    //this.listaTweets.push(this.nuevoTweet);
-    //this.nuevoTweet = new Tweet();
   }
   ngOnInit(): void {
   }
