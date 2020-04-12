@@ -8,6 +8,7 @@ import { CreateFollowerComponent } from './create-follower/create-follower.compo
 import { CreatePostComponent } from './create-post/create-post.component';
 import { ListaPostsComponent } from './lista-posts/lista-posts.component';
 import { LoginComponent } from './login/login.component';
+import { ListaFollowersComponent } from './lista-followers/lista-followers.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
   {   path: 'new-Followers', component: CreateFollowerComponent   },
   {   path: 'post', component: CreatePostComponent   },
   {   path: 'lista-posts', component: ListaPostsComponent   },
+  {   path: 'lista-followers', component: ListaFollowersComponent   },
   {   path: '**', component: PageNotFoundComponent   },
 ];
 
