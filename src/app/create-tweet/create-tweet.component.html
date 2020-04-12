@@ -1,5 +1,24 @@
-<div>
-    <h1>Hola Mundo</h1>
-    <h2>Prueba de Funcionamiento</h2>
-    <h3>No 82634</h3>
-</div>
+<br>
+<br>
+<br>
+<img src= "https://image.flaticon.com/icons/png/512/23/23931.png" width="30" height="30"/>
+<br>
+<h2>Agregar un nuevo tweet</h2>
+<div class = "input-placa">
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label class="mat-label">Texto:</mat-label>
+        <textarea matInput placeholder="¿Qué quieres decir en tu tweet?"[(ngModel)]="nuevoTweet.texto" ></textarea>
+    </mat-form-field>  
+    <mat-form-field class="example-full-width">
+        <mat-label class="mat-label">Autor:</mat-label>
+        <textarea matInput placeholder="¿Quién eres?"[(ngModel)]="nuevoTweet.autor" ></textarea>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label class="mat-label">Fecha:</mat-label>
+      <textarea matInput placeholder="¿Qué día es hoy?"[(ngModel)]="nuevoTweet.fecha" ></textarea>
+  </mat-form-field>  
+  </form>
+</div>  
+      <button class="mat-flat-button" (click) = "adicionarNuevoTweet()" selected>Add Tweet</button>
+  

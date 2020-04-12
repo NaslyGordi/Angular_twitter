@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Tweet } from './models/tweet.model';
 import { Observable, of } from 'rxjs';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -16,6 +17,9 @@ export class TweetsService {
   getAllTweets() : Observable<Tweet[]>{
     return of (this.ALL_TWEETS);
   }
-  createNewTweet(){ 
+  createNewTweet(nuevoTweet){ 
+    console.log(nuevoTweet);
+    this.ALL_TWEETS.push(nuevoTweet);
+    //this.nuevoTweet = new Tweet();
   }
 }

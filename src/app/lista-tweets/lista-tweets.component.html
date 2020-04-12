@@ -1,5 +1,8 @@
-<div *ngFor='let tweet of misTweets'>
-    <h1>   {{tweet.texto}}   </h1>
-    <h2>   {{tweet.autor}}   </h2>
-    <h2>   {{tweet.fecha}}   </h2>
-</div>
+<div *ngFor ='let tweet of misTweets'>  
+    <h2>Texto:</h2>
+    <h2>{{ tweet.texto }}</h2>
+    <h1> Autor:</h1>
+    <h2>{{ tweet.autor }}</h2>
+    <h1> Fecha:</h1>
+    <h2>{{ tweet.fecha }}</h2>
+  </div>
