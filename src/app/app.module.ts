@@ -10,10 +10,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { CreateTweetComponent } from './create-tweet/create-tweet.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatTabsModule } from '@angular/material/tabs';
 import { ListaTweetAutorComponent } from './lista-tweet-autor/lista-tweet-autor.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { CreateFollowerComponent } from './create-follower/create-follower.component';
+import { MatInputModule } from '@angular/material/input';
+import { CreatePostComponent } from './create-post/create-post.component';
+import { ListaPostsComponent } from './lista-posts/lista-posts.component';
+import { MatTabsModule } from '@angular/material/tabs';
 
 
 @NgModule({
@@ -24,6 +28,9 @@ import { ListaTweetAutorComponent } from './lista-tweet-autor/lista-tweet-autor.
     CreateTweetComponent,
     PageNotFoundComponent,
     ListaTweetAutorComponent
+    CreateFollowerComponent,
+    CreatePostComponent,
+    ListaPostsComponent
   ],
   imports: [
     BrowserModule,
@@ -32,8 +39,9 @@ import { ListaTweetAutorComponent } from './lista-tweet-autor/lista-tweet-autor.
     BrowserAnimationsModule,
     MatButtonModule,
     MatTableModule,
-    MatInputModule,
     MatDatepickerModule,
+    MatMenuModule,
+    MatInputModule,
     MatTabsModule
   ],
   providers: [],
