@@ -1,0 +1,20 @@
+*{
+    margin:0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div#general{
+    margin: auto;
+    width: 800px;
+    max-width: 90%;
+    margin:30px auto;
+
+}
+.mat-label{
+    color: #00acee;
+    justify-content: center;
+    margin-right:auto;
+    display:inline-block
+  }
