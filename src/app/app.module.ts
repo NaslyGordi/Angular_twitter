@@ -10,12 +10,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { CreateTweetComponent } from './create-tweet/create-tweet.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { ListaTweetAutorComponent } from './lista-tweet-autor/lista-tweet-autor.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { CreateFollowerComponent } from './create-follower/create-follower.component';
 import { MatInputModule } from '@angular/material/input';
 import { CreatePostComponent } from './create-post/create-post.component';
 import { ListaPostsComponent } from './lista-posts/lista-posts.component';
 import { MatTabsModule } from '@angular/material/tabs';
+
 
 @NgModule({
   declarations: [
@@ -24,6 +27,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     ListaTweetsComponent,
     CreateTweetComponent,
     PageNotFoundComponent,
+    ListaTweetAutorComponent,
     CreateFollowerComponent,
     CreatePostComponent,
     ListaPostsComponent
@@ -35,6 +39,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     BrowserAnimationsModule,
     MatButtonModule,
     MatTableModule,
+    MatDatepickerModule,
     MatMenuModule,
     MatInputModule,
     MatTabsModule
