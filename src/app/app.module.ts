@@ -18,7 +18,12 @@ import { MatInputModule } from '@angular/material/input';
 import { CreatePostComponent } from './create-post/create-post.component';
 import { ListaPostsComponent } from './lista-posts/lista-posts.component';
 import { MatTabsModule } from '@angular/material/tabs';
-
+import { LoginComponent } from './login/login.component';
+import { MenuComponent } from './menu/menu.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -30,7 +35,9 @@ import { MatTabsModule } from '@angular/material/tabs';
     ListaTweetAutorComponent,
     CreateFollowerComponent,
     CreatePostComponent,
-    ListaPostsComponent
+    ListaPostsComponent,
+    LoginComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +49,11 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatDatepickerModule,
     MatMenuModule,
     MatInputModule,
-    MatTabsModule
+    MatTabsModule,
+    MatCardModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

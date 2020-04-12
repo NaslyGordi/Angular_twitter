@@ -1,0 +1,13 @@
+.card-login {
+    width: 20%;
+    align-items: center;
+}
+
+.boton-login {
+    background-color: rgb(26, 145, 218) !important;
+    color: white;
+}
+
+.inicial {
+    color: rgba(29,161,242,1.00) !important;
+}
