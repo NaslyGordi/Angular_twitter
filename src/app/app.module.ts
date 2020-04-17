@@ -27,6 +27,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ListaFollowersComponent } from './lista-followers/lista-followers.component';
 import { ListaUsuarioIdComponent } from './lista-usuario-id/lista-usuario-id.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +43,8 @@ import { ListaUsuarioIdComponent } from './lista-usuario-id/lista-usuario-id.com
     MenuComponent,
     ListaFollowersComponent,
     ListaUsuarioIdComponent
+    MenuComponent
+
   ],
   imports: [
     BrowserModule,

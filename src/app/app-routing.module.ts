@@ -12,6 +12,7 @@ import { ListaFollowersComponent } from './lista-followers/lista-followers.compo
 import { ListaUsuarioIdComponent } from './lista-usuario-id/lista-usuario-id.component';
 
 
+
 const routes: Routes = [
   {   path: 'login', component: LoginComponent },
   {   path: '', component: LoginComponent  },
@@ -23,6 +24,7 @@ const routes: Routes = [
   {   path: 'lista-posts', component: ListaPostsComponent   },
   {   path: 'lista-followers', component: ListaFollowersComponent   },
   {   path: "lista-Usiario-Id", component: ListaUsuarioIdComponent },
+
   {   path: '**', component: PageNotFoundComponent   },
 ];
 
