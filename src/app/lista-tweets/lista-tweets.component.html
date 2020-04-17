@@ -1,7 +1,11 @@
 <app-menu></app-menu>
-
 <div id="general" *ngFor ='let tweet of misTweets'>
     <br>
+    <br>
+    <br>
+<div id="general" *ngFor ='let tweet of misTweets'>
+    <br>
+
     <mat-tab-group>    
     <mat-tab label="Tweet">{{ tweet.texto }}</mat-tab>             
     <mat-tab label="Autor">{{ tweet.autor }}</mat-tab>            
@@ -10,4 +14,6 @@
     <br>
     <br>
   </mat-tab-group>
+</div>
   </div>
+
