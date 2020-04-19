@@ -26,6 +26,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ListaFollowersComponent } from './lista-followers/lista-followers.component';
 import { ListaUsuarioIdComponent } from './lista-usuario-id/lista-usuario-id.component';
+import { DeleteUsuarioComponent } from './delete-usuario/delete-usuario.component';
 
 
 @NgModule({
@@ -42,8 +43,9 @@ import { ListaUsuarioIdComponent } from './lista-usuario-id/lista-usuario-id.com
     LoginComponent,
     MenuComponent,
     ListaFollowersComponent,
-    ListaUsuarioIdComponent
-    MenuComponent
+    ListaUsuarioIdComponent,
+    MenuComponent,
+    DeleteUsuarioComponent
 
   ],
   imports: [
