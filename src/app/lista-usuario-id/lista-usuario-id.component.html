@@ -5,12 +5,12 @@
 <div id="general">
 <label>Busca Usuario por Id</label>
 <br>
-<textarea [(ngModel)]="b"></textarea>
-<button (click) = "buscarTweetAutor()">Buscar</button> 
+<textarea [(ngModel)]="u"></textarea>
+<button (click) = "buscarUsuarioId()">Buscar</button> 
 </div>
 
-    <!--
-    <div id="general" *ngFor ='let user of misUsers'>
+
+    <div id="general" *ngFor ='let user of listUsers'>
         <br>
         <mat-tab-group>    
         <mat-tab label="Id">{{ user.idUser }}</mat-tab>             
@@ -22,5 +22,3 @@
       </mat-tab-group>
       </div>
 
-
-    -->

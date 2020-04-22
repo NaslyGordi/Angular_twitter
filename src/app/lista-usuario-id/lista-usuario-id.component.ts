@@ -10,9 +10,9 @@ import { UserService } from '../user.service';
 export class ListaUsuarioIdComponent implements OnInit {
   u;
   listUsers;
-  constructor(private UserService: UserService) {  
-    
-}
+  constructor(private UserService: UserService) { 
+    this.getAllUsers();
+  }
   ngOnInit(): void {
   }
 
@@ -25,12 +25,15 @@ const dato = this.listUsers.findOne({ where: { idUser: idUser }//Execute query
 console.log("dato: " + dato);
 }
 
-getTweets(){
-this.UserService.getAllUsers().subscribe(
-  listUserObs => {
-    this.listUsers = listUserObs;
+getAllUsers(){
+  this.UserService.getAllUsers().subscribe(
+    listUserObs => {
+      this.listUsers = listUserObs;
+    }
+  
+    )
+  }
   }
 
-  )
-}
-}
+
+
