@@ -1,1 +1,24 @@
-<p>delete-usuario works!</p>
+<app-menu></app-menu>
+
+
+
+<div id="general">
+<label>Busca Usuario por Id</label>
+<br>
+<textarea [(ngModel)]="d"></textarea>
+<button (click) = "buscarUsuarioId()">Buscar</button> 
+</div>
+
+
+    <div id="general" *ngFor ='let user of listUsers'>
+        <br>
+        <mat-tab-group>    
+        <mat-tab label="Id">{{ user.idUser }}</mat-tab>             
+        <mat-tab label="Nombre">{{ user.username }}</mat-tab>            
+        <mat-tab label="Fecha">{{ user.creation_date }}</mat-tab> 
+        <br>
+        <br>
+        <br>
+      </mat-tab-group>
+      </div>
+
