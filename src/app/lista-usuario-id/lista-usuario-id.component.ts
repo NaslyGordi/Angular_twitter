@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
 
+
 @Component({
   selector: 'app-lista-usuario-id',
   templateUrl: './lista-usuario-id.component.html',
@@ -9,8 +10,9 @@ import { UserService } from '../user.service';
 export class ListaUsuarioIdComponent implements OnInit {
   u;
   listUsers;
-  constructor(private UserService: UserService) {  }
-//this.getTweets();
+  constructor(private UserService: UserService) {  
+    
+}
   ngOnInit(): void {
   }
 
@@ -22,16 +24,13 @@ const dato = this.listUsers.findOne({ where: { idUser: idUser }//Execute query
 });
 console.log("dato: " + dato);
 }
-/*
+
 getTweets(){
-this.UserService.getAllUser().subscribe(
+this.UserService.getAllUsers().subscribe(
   listUserObs => {
     this.listUsers = listUserObs;
   }
-)
+
+  )
 }
-*/
-
-
 }
-
