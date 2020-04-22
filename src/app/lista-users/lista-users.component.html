@@ -1,0 +1,14 @@
+<app-menu></app-menu>
+
+<div id="general" *ngFor ='let user of misUser'>  
+    <br>
+    <br>
+    <br>
+    <mat-tab-group>    
+    <mat-tab label="Nomre Usuario">  {{user.idUser}    </mat-tab>                         
+    <mat-tab label="Id seguidor">     {{user.username}}   </mat-tab> 
+    <br>
+    <br>
+    <br>
+  </mat-tab-group>
+</div>
