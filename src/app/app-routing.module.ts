@@ -13,6 +13,12 @@ import { ListaUsuarioIdComponent } from './lista-usuario-id/lista-usuario-id.com
 
 
 
+
+
+
+
+
+
 const routes: Routes = [
   {   path: 'login', component: LoginComponent },
   {   path: '', component: LoginComponent  },
