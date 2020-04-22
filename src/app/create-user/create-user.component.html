@@ -1,0 +1,48 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header card-header-success card-danger">
+                        <h4 class="card-title">Registro</h4>
+                        <p class="card-category">Registro de usuario </p>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="col-md-6">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="Name" type="text">
+                                </mat-form-field>
+                              </div>
+                              <div class="col-md-6">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="nickname" type="text">
+                                </mat-form-field>
+                              </div>
+                              <div class="col-md-6">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="Telephone" type="number">
+                                </mat-form-field>
+                              </div>
+                              <div class="col-md-6">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="Country" type="text">
+                                </mat-form-field>
+                              </div>
+                              <div class="col-md-6">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="Mail" type="text">
+                                </mat-form-field>
+                              </div>
+                                <div class="row">
+                            </div>
+                            <div class="fondoInferior">
+                              <button mat-raised-button type="submit" class="colorButton">Check In</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>     
+    </div>
+    <button mat-flat-button (click) = "NewUser()" color="primary" selected>Registrar Usuario</button>
+  </div>
