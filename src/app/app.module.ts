@@ -27,6 +27,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ListaFollowersComponent } from './lista-followers/lista-followers.component';
 import { ListaUsuarioIdComponent } from './lista-usuario-id/lista-usuario-id.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { ListaUsersComponent } from './lista-users/lista-users.component';
 
 
 
@@ -47,6 +48,7 @@ import { CreateUserComponent } from './create-user/create-user.component';
     ListaUsuarioIdComponent,
     MenuComponent,
     CreateUserComponent,
+    ListaUsersComponent,
   
 
   ],
