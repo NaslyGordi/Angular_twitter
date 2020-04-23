@@ -1,15 +1,12 @@
 <app-menu></app-menu>
-
+<div id="inicial">
+    <img src= "https://image.flaticon.com/icons/png/512/23/23931.png" width="30" height="30"/>
+    <h2>Lista de Usuarios</h2>
+</div>
 <div id="general" *ngFor ='let user of misUser'>  
-    <br>
-    <br>
-    <br>
     <mat-tab-group>    
     <mat-tab label="Id Usuario">     {{user.idUser}}         </mat-tab>                         
     <mat-tab label="Nombre Usuario"> {{user.username}}       </mat-tab> 
     <mat-tab label="Fecha">          {{user.creation_date}}  </mat-tab> 
-    <br>
-    <br>
-    <br>
-  </mat-tab-group>
+    </mat-tab-group>
 </div>

@@ -1,45 +1,82 @@
 .example-button-row button,
-.example-button-row a {
-  margin-right: 38px;
-}
-.example-form {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
-  color: black;
-  color-interpolation-filters: black;
-}
+  .example-button-row a {
+    justify-content: center;
+    margin-right:auto;
+    display:inline-block
+  }
+  div#general{
+    margin: auto;
+    width: 800px;
+    max-width: 90%;
+    margin:30px auto;
+  }
+  div#inicial{
+    margin: auto;
+    width: 350px;
+    max-width: 90%;
+    margin:30px auto;
+  }
+  div#texto{
+    margin: auto;
+    width: 550px;
+    max-width: 90%;
+    margin:30px auto;
+  }
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    justify-content: center;
+    margin-right:auto;
+    display:inline-block
+  }
+  
+  .example-full-width {
+    width: 60%;
+    justify-content: center;
+    margin-right:auto;
+    display:inline-block
+  }
 
-.example-full-width {
-  width: 100%;
-}
+  .example-button-row{
+    border-radius: 50px;
+    justify-content: center;
+    margin-right:auto;
+    display:inline-block
+  }
 
-.example-button-row{
-  border-radius: 50px;
-}
+  .mat-flat-button{
+    background-color: #00acee;
+    border-radius: 50px;
+    color: blanchedalmond;
+    width:500px;
+    height:30px;
+    margin-right:auto;
+    display:inline-block
 
-.mat-flat-button{
-  background-color: #00acee;
-  border-radius: 50px;
-  color: blanchedalmond;
-  width:500px;
-  height:30px
+  }
+  .mat-label{
+    color: #00acee;
+    justify-content: center;
+    margin-right:auto;
+    display:inline-block
+  }
+  textarea{
+    color: black;
+    justify-content: center;
+    margin-right:auto;
+    display:inline-block
+  }
+.img{
+  width: 100;
+  height: 100;
+  src: "https://image.flaticon.com/icons/png/512/23/23931.png";
 }
-div#general{
-  margin: auto;
-  width: 800px;
-  max-width: 90%;
-  margin:30px auto;
-}
-div#inicial{
-  margin: auto;
-  width: 350px;
-  max-width: 90%;
-  margin:30px auto;
-}
-div#texto{
-  margin: auto;
-  width: 550px;
-  max-width: 90%;
-  margin:30px auto;
+.content {
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
 }

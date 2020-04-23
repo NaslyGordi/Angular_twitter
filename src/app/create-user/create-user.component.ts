@@ -8,25 +8,25 @@ import { UserService } from '../user.service';
   styleUrls: ['./create-user.component.css']
 })
 export class CreateUserComponent implements OnInit {
-    newUser: User;
-    allUser;
+  newUser: User;
+  allUser;
   constructor(private UserService: UserService) {
     this.newUser = new User;
    }
-   NewUser (){
-     this.UserService.createNewUser(this.NewUser);
+NewUser(){
+     this.UserService.createNewUser(this.newUser);
      this.newUser = new User;
-     this.getAllUser();
+     //this.getAllUser();
    }
   ngOnInit(): void {
   }
-  getAllUser(){
+  /*getAllUser(){
     this.UserService.getAllUsers().subscribe(
       misFollowersObs => {
         this.allUser = misFollowersObs;
       }
     )
-  }  
+  }*/  
 }    
  
 

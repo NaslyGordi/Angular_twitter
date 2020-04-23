@@ -5,15 +5,10 @@
 <textarea [(ngModel)]="b"></textarea>
 <button (click) = "buscarTweetAutor()">Buscar</button>
 </div>
-
 <div id="general" *ngFor ='let tweet of misTweets'>
-    <br>
     <mat-tab-group>    
     <mat-tab label="Tweet">{{ tweet.texto }}</mat-tab>             
     <mat-tab label="Autor">{{ tweet.autor }}</mat-tab>            
     <mat-tab label="Fecha">{{ tweet.fecha }}</mat-tab> 
-    <br>
-    <br>
-    <br>
   </mat-tab-group>
-  </div>
+</div>

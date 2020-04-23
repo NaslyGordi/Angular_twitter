@@ -11,7 +11,6 @@ export class ListaUsersComponent implements OnInit {
   constructor(private UserService: UserService) { 
     this.getAllUsers();
   }
-
   ngOnInit(): void {
   }
   getAllUsers(){
@@ -19,8 +18,6 @@ export class ListaUsersComponent implements OnInit {
       misUserObs => {
         this.misUser = misUserObs;
         }
-
     )
-}
-
+  }
 }
