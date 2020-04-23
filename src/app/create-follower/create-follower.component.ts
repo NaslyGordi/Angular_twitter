@@ -18,17 +18,17 @@ export class CreateFollowerComponent implements OnInit {
   NewFollower (){
     this.FollowersService.createNewFollower(this.newFollower);
     this.newFollower = new Follower;
-    this.getAllFollowers();
+    //this.getAllFollowers();
   }
   ngOnInit(): void {
   }
-  getAllFollowers(){
+  /*getAllFollowers(){
     this.FollowersService.getAllFollowers().subscribe(
       misFollowersObs => {
         this.misFollowers = misFollowersObs;
       }
     )
     //this.misTweets = this.TweetsService.getAllTweets();
-  }
+  }*/
 
 }
