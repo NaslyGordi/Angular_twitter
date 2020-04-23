@@ -13,7 +13,7 @@ import { ListaUsuarioIdComponent } from './lista-usuario-id/lista-usuario-id.com
 import { DeleteUsuarioComponent } from './delete-usuario/delete-usuario.component';
 import { ListaUsersComponent } from './lista-users/lista-users.component';
 import { CreateUserComponent } from './create-user/create-user.component';
-
+import { DeleteTweetComponent } from './delete-tweet/delete-tweet.component';
 
 const routes: Routes = [
   {   path: 'login', component: LoginComponent },
@@ -23,6 +23,7 @@ const routes: Routes = [
   {   path: "lista-Tweets-Autor", component: ListaTweetAutorComponent },
   {   path: 'new-Followers', component: CreateFollowerComponent   },
   {   path: 'post', component: CreatePostComponent   },
+  {   path: 'delete-Tweet', component:   DeleteTweetComponent },
   {   path: 'lista-posts', component: ListaPostsComponent   },
   {   path: 'lista-followers', component: ListaFollowersComponent   },
   {   path: "lista-Usuario-Id", component: ListaUsuarioIdComponent },
