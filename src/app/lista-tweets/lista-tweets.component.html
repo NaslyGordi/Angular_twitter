@@ -1,16 +1,14 @@
 <app-menu></app-menu>
-    <br>
-    <br>
+<div id="inicial">
+  <img src= "https://image.flaticon.com/icons/png/512/23/23931.png" width="30" height="30"/>
+  <h2>Lista de Tweets</h2>
+</div>
 <div id="general" *ngFor ='let tweet of misTweets'>
-    <br>
     <mat-tab-group>    
     <mat-tab label="Tweet">{{ tweet.texto }}</mat-tab>             
     <mat-tab label="Autor">{{ tweet.autor }}</mat-tab>            
     <mat-tab label="Fecha">{{ tweet.fecha }}</mat-tab>
     <mat-tab label="Eliminar Tweet">{{ tweet }}</mat-tab>  
-    <br>
-    <br>
-    <br>
   </mat-tab-group>
 </div>
 

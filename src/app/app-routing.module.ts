@@ -12,8 +12,7 @@ import { ListaFollowersComponent } from './lista-followers/lista-followers.compo
 import { ListaUsuarioIdComponent } from './lista-usuario-id/lista-usuario-id.component';
 import { DeleteUsuarioComponent } from './delete-usuario/delete-usuario.component';
 import { ListaUsersComponent } from './lista-users/lista-users.component';
-
-
+import { CreateUserComponent } from './create-user/create-user.component';
 
 
 const routes: Routes = [
@@ -29,6 +28,7 @@ const routes: Routes = [
   {   path: "lista-Usuario-Id", component: ListaUsuarioIdComponent },
   {   path: "delete-usuario", component: DeleteUsuarioComponent},
   {   path: "All-users", component: ListaUsersComponent },
+  {   path: "new-user", component: CreateUserComponent},
   {   path: '**', component: PageNotFoundComponent   },
 ];
 

@@ -1,48 +1,29 @@
-<div class="main-content">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header card-header-success card-danger">
-                        <h4 class="card-title">Registro</h4>
-                        <p class="card-category">Registro de usuario </p>
-                    </div>
-                    <div class="card-body">
-                        <form>
-                            <div class="col-md-6">
-                                <mat-form-field class="example-full-width">
-                                  <input matInput placeholder="Name" type="text">
-                                </mat-form-field>
-                              </div>
-                              <div class="col-md-6">
-                                <mat-form-field class="example-full-width">
-                                  <input matInput placeholder="nickname" type="text">
-                                </mat-form-field>
-                              </div>
-                              <div class="col-md-6">
-                                <mat-form-field class="example-full-width">
-                                  <input matInput placeholder="Telephone" type="number">
-                                </mat-form-field>
-                              </div>
-                              <div class="col-md-6">
-                                <mat-form-field class="example-full-width">
-                                  <input matInput placeholder="Country" type="text">
-                                </mat-form-field>
-                              </div>
-                              <div class="col-md-6">
-                                <mat-form-field class="example-full-width">
-                                  <input matInput placeholder="Mail" type="text">
-                                </mat-form-field>
-                              </div>
-                                <div class="row">
-                            </div>
-                            <div class="fondoInferior">
-                              <button mat-raised-button type="submit" class="colorButton">Check In</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>     
-    </div>
-    <button mat-flat-button (click) = "NewUser()" color="primary" selected>Registrar Usuario</button>
-  </div>
+<app-menu></app-menu>
+<div *ngFor='let user of allUser'> 
+  <h1>   {{user.idUser}}   </h1>
+  <h1>   {{user.username}}  </h1>
+  <h1>   {{user.creation_date}}         </h1>
+</div>
+
+
+
+<div id="inicial">
+  <img src= "https://image.flaticon.com/icons/png/512/23/23931.png" width="30" height="30"/>
+  <h2>Agregar un nuevo Usuario</h2>
+</div>
+
+<div id="general">
+  <mat-form-field class="example-full-width">
+    <mat-label class="mat-label">Id del Usuario:</mat-label>
+      <textarea matInput placeholder="Id Usuario" [(ngModel)]="newUser.idUser" ></textarea>
+  </mat-form-field>  
+  <mat-form-field class="example-full-width">
+      <mat-label class="mat-label">Nombre:</mat-label>
+      <textarea matInput placeholder="Nombre del Uusuario"[(ngModel)]="newUser.username" ></textarea>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label class="mat-label">Fecha</mat-label>
+    <textarea matInput placeholder="Fecha"[(ngModel)]="newUser.creation_date" ></textarea>
+</mat-form-field>  
+<button mat-flat-button (click) = "NewUser()" color="primary" selected>Registrar Usuario</button>
+</div>  

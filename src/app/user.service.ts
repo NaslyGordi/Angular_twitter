@@ -19,8 +19,7 @@ export class UserService {
   }
   createNewUser(newUser){    
     this.ALL_USER.push(newUser);
-  }
-  
+  }  
 }
 
 

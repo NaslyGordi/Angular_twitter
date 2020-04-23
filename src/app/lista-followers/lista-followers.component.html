@@ -1,15 +1,12 @@
 <app-menu></app-menu>
-
+<div id="inicial">
+  <img src= "https://image.flaticon.com/icons/png/512/23/23931.png" width="30" height="30"/>
+  <h2>Lista de Seguidores</h2>
+</div>
 <div id="general" *ngFor ='let follower of misFollowers'>  
-    <br>
-    <br>
-    <br>
     <mat-tab-group>    
-    <mat-tab label="Nomre seguidor">  {{follower.followername}}    </mat-tab>             
+    <mat-tab label="Nombre seguidor">  {{follower.followername}}   </mat-tab>             
     <mat-tab label="Fecha">           {{follower.creation_date}}   </mat-tab>            
     <mat-tab label="Id seguidor">     {{follower.idUser}}          </mat-tab> 
-    <br>
-    <br>
-    <br>
   </mat-tab-group>
 </div>
