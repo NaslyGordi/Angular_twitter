@@ -27,7 +27,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ListaFollowersComponent } from './lista-followers/lista-followers.component';
 import { ListaUsuarioIdComponent } from './lista-usuario-id/lista-usuario-id.component';
 import { DeleteUsuarioComponent } from './delete-usuario/delete-usuario.component';
-
+import { CreateUserComponent } from './create-user/create-user.component';
+import { ListaUsersComponent } from './lista-users/lista-users.component';
 
 @NgModule({
   declarations: [
@@ -45,8 +46,9 @@ import { DeleteUsuarioComponent } from './delete-usuario/delete-usuario.componen
     ListaFollowersComponent,
     ListaUsuarioIdComponent,
     MenuComponent,
-    DeleteUsuarioComponent
-
+    DeleteUsuarioComponent,
+    CreateUserComponent,
+    ListaUsersComponent,
   ],
   imports: [
     BrowserModule,

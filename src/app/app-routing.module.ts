@@ -11,11 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { ListaFollowersComponent } from './lista-followers/lista-followers.component';
 import { ListaUsuarioIdComponent } from './lista-usuario-id/lista-usuario-id.component';
 import { DeleteUsuarioComponent } from './delete-usuario/delete-usuario.component';
-
-
-
-
-
+import { ListaUsersComponent } from './lista-users/lista-users.component';
 
 
 
@@ -32,6 +28,7 @@ const routes: Routes = [
   {   path: 'lista-followers', component: ListaFollowersComponent   },
   {   path: "lista-Usiario-Id", component: ListaUsuarioIdComponent },
   {   path: "delete-usuario", component: DeleteUsuarioComponent},
+  {   path: "lista-users", component: ListaUsersComponent },
   {   path: '**', component: PageNotFoundComponent   },
 ];
 
