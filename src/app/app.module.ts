@@ -24,6 +24,12 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { ListaFollowersComponent } from './lista-followers/lista-followers.component';
+import { ListaUsuarioIdComponent } from './lista-usuario-id/lista-usuario-id.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { ListaUsersComponent } from './lista-users/lista-users.component';
+
+
 
 @NgModule({
   declarations: [
@@ -37,7 +43,14 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     CreatePostComponent,
     ListaPostsComponent,
     LoginComponent,
-    MenuComponent
+    MenuComponent,
+    ListaFollowersComponent,
+    ListaUsuarioIdComponent,
+    MenuComponent,
+    CreateUserComponent,
+    ListaUsersComponent,
+  
+
   ],
   imports: [
     BrowserModule,
