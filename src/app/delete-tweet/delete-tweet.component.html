@@ -1,0 +1,18 @@
+<app-menu></app-menu>
+
+<div id="general">
+  <div id="inicial">
+    <img src= "https://image.flaticon.com/icons/png/512/23/23931.png" width="30" height="30"/>
+    <h2>Eliminar Tweet Por Id</h2>
+  </div>
+
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Ingrese el Id del Tweet que desea Eliminar</mat-label>
+      <span matPrefix>Id: &nbsp;</span>
+      <input type="number" matInput placeholder="123...n" [(ngModel)]="id_Eliminar" [ngModelOptions]="{standalone: true}">
+      <mat-icon matSuffix (click) = "deleteTweetById()"  title="Eliminar Tweet">delete</mat-icon>
+    </mat-form-field>
+  </form>
+
+</div>

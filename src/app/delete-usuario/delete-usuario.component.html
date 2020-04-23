@@ -1,14 +1,19 @@
 <!--<app-menu></app-menu>
 
-
-
 <div id="general">
-<label>Busca Usuario por Id</label>
-<br>
-<textarea [(ngModel)]="d"></textarea>
-<button (click) = "buscarUsuarioId()">Buscar</button> 
-</div>
+  <div id="inicial">
+    <img src= "https://image.flaticon.com/icons/png/512/23/23931.png" width="30" height="30"/>
+    <h2>Eliminar Usuario Por Id</h2>
+  </div>
 
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Ingrese el Id del Usuario que desea Eliminar</mat-label>
+      <span matPrefix>Id: &nbsp;</span>
+      <input type="number" matInput placeholder="123...n" [(ngModel)]="id_Eliminar" [ngModelOptions]="{standalone: true}">
+      <mat-icon matSuffix (click) = "deleteUserById()"  title="Eliminar Registro">delete</mat-icon>
+    </mat-form-field>
+  </form>
 
     <div id="general" *ngFor ='let user of listUsers'>
         <br>
@@ -21,6 +26,6 @@
         <br>
       </mat-tab-group>
       </div>
--->
 
-      <iframe align="left" frameborder="0" height="100%" marginheight="4" marginwidth="2" scrolling="auto" src="https://gestiondocumental.mincit.gov.co/TMS.Solution.GESTIONDOC/Proxy/PQRPublica2" width="100%">Tu navegador no soporta frames!!</iframe>
+
+        -->

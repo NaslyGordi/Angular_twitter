@@ -10,8 +10,6 @@ export class UserService {
     {   idUser: 1,   username: "Julian",    creation_date: "2020-04-08"     },
     {   idUser: 2,   username: "Tatiana",   creation_date: "2020-04-09",    },
     {   idUser: 3,   username: "Nasly",     creation_date: "2020-04-10",    }
-    //{   idUser: 4,   username: "Katherin",  creation_date: "2020-04-11",    },
-    //{   idUser: 5,   username: "Andres",    creation_date: "2020-04-12",    }
   ]
   constructor() { }
   getAllUsers() : Observable<User[]>{
@@ -20,6 +18,12 @@ export class UserService {
   createNewUser(newUser){    
     this.ALL_USER.push(newUser);
   }  
+  deleteUserById(id_Eliminar){
+    var index = this.ALL_USER.findIndex(function (usuario){
+      return usuario.idUser === id_Eliminar ;
+    })
+    this.ALL_USER.splice(index,1);
+  }
 }
 
 

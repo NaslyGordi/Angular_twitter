@@ -29,6 +29,7 @@ import { ListaUsuarioIdComponent } from './lista-usuario-id/lista-usuario-id.com
 import { DeleteUsuarioComponent } from './delete-usuario/delete-usuario.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { ListaUsersComponent } from './lista-users/lista-users.component';
+import { DeleteTweetComponent } from './delete-tweet/delete-tweet.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { ListaUsersComponent } from './lista-users/lista-users.component';
     DeleteUsuarioComponent,
     CreateUserComponent,
     ListaUsersComponent,
+    DeleteTweetComponent,
   ],
   imports: [
     BrowserModule,
