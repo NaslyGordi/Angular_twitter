@@ -24,6 +24,7 @@ export class CreateTweetComponent implements OnInit {
     };
     console.log(a);
     this.TweetsService.createNewTweet(this.nuevoTweet);
+    this.nuevoTweet = new Tweet; 
   }
   ngOnInit(): void {
   }

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FollowersService } from '../followers.service';
 
-
 @Component({
   selector: 'app-lista-followers',
   templateUrl: './lista-followers.component.html',
@@ -24,4 +23,3 @@ export class ListaFollowersComponent implements OnInit {
     )
   }
 }
-

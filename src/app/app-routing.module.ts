@@ -26,9 +26,9 @@ const routes: Routes = [
   {   path: 'post', component: CreatePostComponent   },
   {   path: 'lista-posts', component: ListaPostsComponent   },
   {   path: 'lista-followers', component: ListaFollowersComponent   },
-  {   path: "lista-Usiario-Id", component: ListaUsuarioIdComponent },
+  {   path: "lista-Usuario-Id", component: ListaUsuarioIdComponent },
   {   path: "delete-usuario", component: DeleteUsuarioComponent},
-  {   path: "lista-users", component: ListaUsersComponent },
+  {   path: "All-users", component: ListaUsersComponent },
   {   path: '**', component: PageNotFoundComponent   },
 ];
 

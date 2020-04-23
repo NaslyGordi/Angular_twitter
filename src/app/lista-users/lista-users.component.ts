@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service'
 
-
 @Component({
   selector: 'app-lista-users',
   templateUrl: './lista-users.component.html',
@@ -24,5 +23,4 @@ export class ListaUsersComponent implements OnInit {
     )
 }
 
-  }
-
+}
