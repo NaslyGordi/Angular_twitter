@@ -9,30 +9,32 @@ import { UserService } from '../user.service';
 export class DeleteUsuarioComponent implements OnInit {
   d;
   listUsers;
+  id_Eliminar ;
   constructor(private UserService: UserService) { 
     this.getAllUsers();
   }
   ngOnInit(): void {
   }
-
-
-
-buscarUsuarioId(){
-const { idUser } = this.d ;
-const dato = this.listUsers.findOne({ where: { idUser: idUser }//Execute query
-});
-console.log("dato: " + dato);
-}
-
-getAllUsers(){
+  buscarUsuarioId(){
+  const { idUser } = this.d ;
+  const dato = this.listUsers.findOne({ where: { idUser: idUser }//Execute query
+  });
+  console.log("dato: " + dato);
+  }
+  getAllUsers(){
   this.UserService.getAllUsers().subscribe(
     listUserObs => {
       this.listUsers = listUserObs;
     }
-  
-    )
+  )}
+  deleteUserById(){
+    if (this.id_Eliminar === undefined) {
+      
+    }else{ 
+      this.UserService.deleteUserById(this.id_Eliminar);
+      this.id_Eliminar = "";
+    }
   }
-  }
-
+}
 
 
