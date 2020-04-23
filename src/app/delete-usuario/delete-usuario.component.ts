@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
 
-
 @Component({
-  selector: 'app-lista-usuario-id',
-  templateUrl: './lista-usuario-id.component.html',
-  styleUrls: ['./lista-usuario-id.component.css']
+  selector: 'app-delete-usuario',
+  templateUrl: './delete-usuario.component.html',
+  styleUrls: ['./delete-usuario.component.css']
 })
-export class ListaUsuarioIdComponent implements OnInit {
-  u;
+export class DeleteUsuarioComponent implements OnInit {
+  d;
   listUsers;
   constructor(private UserService: UserService) { 
     this.getAllUsers();
@@ -19,7 +18,7 @@ export class ListaUsuarioIdComponent implements OnInit {
 
 
 buscarUsuarioId(){
-const { idUser } = this.u ;
+const { idUser } = this.d ;
 const dato = this.listUsers.findOne({ where: { idUser: idUser }//Execute query
 });
 console.log("dato: " + dato);
