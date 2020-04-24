@@ -8,8 +8,12 @@ import { Observable, of } from 'rxjs';
 })
 export class TweetsService {
   ALL_TWEETS: Tweet[] = [
-    {   id: 1,   texto: "Cualquie cosa",   autor: "@Julian",   fecha: "11Abr"   },
-    {   id: 2,   texto: "Otra cosa",       autor: "Andres",   fecha: "2020-04-05"   }
+    {   id: 1,   texto: "Cualquier cosa",   autor: "@Julian",   fecha: "11Abr"   },
+    {   id: 2,   texto: "Otra cosa",   autor: "@Tatta",   fecha: "20Abr"   },
+    {   id: 3,   texto: "Cualquier cosa2",   autor: "@Julian",   fecha: "24Abr"   },
+    {   id: 4,   texto: "Otra cosa2",   autor: "@Tatta",   fecha: "12Abr"   },
+    {   id: 5,   texto: "Cualquier cosa3",   autor: "@Julian",   fecha: "31Abr"   },
+    {   id: 6,   texto: "Otra cosa3",   autor: "@Nat",   fecha: "26Abr"   },
 ]
   constructor( ) { }
   getAllTweets() : Observable<Tweet[]>{
