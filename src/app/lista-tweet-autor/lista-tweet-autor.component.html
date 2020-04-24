@@ -15,4 +15,11 @@
     </mat-form-field>
   </form>
 
+  <div id="general" *ngFor ='let tweet of miTweet'>
+    <mat-tab-group>    
+    <mat-tab label="Tweet">{{ tweet.texto }}</mat-tab>             
+    <mat-tab label="Autor">{{ tweet.autor }}</mat-tab>            
+    <mat-tab label="Fecha">{{ tweet.fecha }}</mat-tab>
+  </mat-tab-group>
+
 </div>
