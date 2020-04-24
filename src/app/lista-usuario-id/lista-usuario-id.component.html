@@ -1,13 +1,80 @@
+
+
+<app-menu></app-menu>
+
+<div id="general">
+  <div id="inicial">
+    <img src= "https://image.flaticon.com/icons/png/512/23/23931.png" width="30" height="30"/>
+    <mat-label>Busca Usuario por Id</mat-label>
+  </div>
+
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Ingrese el Id del Usuario que desea Buscar</mat-label>
+      <span matPrefix>Id: &nbsp;</span>
+      <input type="number" matInput placeholder="123...n" [(ngModel)]="id_search" [ngModelOptions]="{standalone: true}">
+      <mat-icon matSuffix (click) = "searchUserById()"  title="Buscar ID">search</mat-icon>
+     <!-- <mat-icon matSuffix (click) = "searchUserById()"  title="Buscar Usuario">Buscar</mat-icon> -->
+    </mat-form-field>
+  </form>
+
+    <div id="general" *ngFor ='let user of listUsers'>
+      <div *ngIf="user.idUser !='id_search'">
+        <br>
+        <mat-tab-group>    
+        <mat-tab label="Id">{{ user.idUser }}</mat-tab>             
+        <mat-tab label="Nombre">{{ user.username }}</mat-tab>            
+        <mat-tab label="Fecha">{{ user.creation_date }}</mat-tab> 
+        <br>
+        <br>
+        <br>
+      </mat-tab-group>
+    </div>
+    </div>
+
+
+
+
+  
+
+
+
+
+
+
+
+<!--
+
 <app-menu></app-menu>
 
 
 
-<div id="general">
-<label>Busca Usuario por Id</label>
-<br>
-<textarea [(ngModel)]="u"></textarea>
-<button (click) = "buscarUsuarioId()">Buscar</button> 
-</div>
+
+
+
+
+
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Busca Usuario por Id</mat-label>
+      <span matPrefix>Id: &nbsp;</span>
+      <input type="number" matInput placeholder="123...n" [(ngModel)]="id_search" [ngModelOptions]="{standalone: true}">
+      <mat-icon matSuffix (click) = "searchUserById"  title="Buscar Usuario">Buscar</mat-icon>
+    </mat-form-field>
+  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <div id="general" *ngFor ='let user of listUsers'>
@@ -22,3 +89,12 @@
       </mat-tab-group>
       </div>
 
+
+
+
+
+   
+
+
+
+    -->

@@ -13,7 +13,7 @@ export class UserService {
   ]
   constructor() { }
   getAllUsers() : Observable<User[]>{
-    return of (this.ALL_USER);
+   return of (this.ALL_USER);
   }
   createNewUser(newUser){    
     this.ALL_USER.push(newUser);
@@ -24,6 +24,11 @@ export class UserService {
     })
     this.ALL_USER.splice(index,1);
   }
+
+searchUserById(id_search){
+  
+}
+
 }
 
 
