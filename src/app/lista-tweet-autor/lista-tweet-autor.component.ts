@@ -8,14 +8,14 @@ import { TweetsService } from '../tweets.service';
 })
 export class ListaTweetAutorComponent implements OnInit {
   misTweets;
-  b;
+  buscar;
   constructor(private TweetsService: TweetsService) { 
     this.getTweets();
   }
   ngOnInit(): void {
   }
   buscarTweetAutor(){
-    const { autor } = this.b ;
+    const { autor } = this.buscar ;
     const dato = this.misTweets.findOne({ where: { autor: autor }//Execute query
     });
     console.log("dato: " + dato);
