@@ -1,14 +1,18 @@
 <app-menu></app-menu>
+
 <div id="general">
-<label>Busca Tweets por autor</label>
-<br>
-<textarea [(ngModel)]="b"></textarea>
-<button (click) = "buscarTweetAutor()">Buscar</button>
-</div>
-<div id="general" *ngFor ='let tweet of misTweets'>
-    <mat-tab-group>    
-    <mat-tab label="Tweet">{{ tweet.texto }}</mat-tab>             
-    <mat-tab label="Autor">{{ tweet.autor }}</mat-tab>            
-    <mat-tab label="Fecha">{{ tweet.fecha }}</mat-tab> 
-  </mat-tab-group>
+  <div id="inicial">
+    <img src= "https://image.flaticon.com/icons/png/512/23/23931.png" width="30" height="30"/>
+    <h2>Buscar tweet por autor</h2>
+  </div>
+
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Ingrese el autor que desea buscar</mat-label>
+      <span matPrefix>Autor: &nbsp;</span>
+      <input type="Text" matInput placeholder="@Autor..." [(ngModel)]="buscar" [ngModelOptions]="{standalone: true}">
+      <mat-icon matSuffix (click) = "buscarTweetAutor()"  title="Buscar Tweet">youtube_searched_for</mat-icon>
+    </mat-form-field>
+  </form>
+
 </div>
